@@ -23,7 +23,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors());
-app.use(express.json());
+app.use(express.static(path.join(path.resolve(), "build")));
 
 app.post("/api/chat", async (req, res) => {
   const { message } = req.body;
@@ -103,16 +103,13 @@ app.post("/chat2.0", async (req, res) => {
 });
 
 
-app.get("/api/chat", (req, res) => {
-  res.send("GET route exists — use POST for chat");
+app.get("*", (req, res) => {
+  res.sendFile(path.join(path.resolve(), "build", "index.html"));
 });
-app.get("/reskill", (req, res) => {
-  res.send("GET route exists — use POST for chat");
-});
-app.get("/chat2.0", (req, res) => {
-  res.send("GET route exists — use POST for chat");
-});
-app.listen(5001, () => console.log("Server running on http://localhost:5001"));
+
+
+const PORT= process.env.PORT||5001;
+app.listen(PORT, () => console.log(`Server running on ${PORT}`));
 
 
 
