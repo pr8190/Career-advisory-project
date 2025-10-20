@@ -61,7 +61,7 @@ const MentalSupportChat = () => {
   // Simple AI response generator (replace with real AI API)
   const generateAIResponse =  async (userInput) => {
     try {
-      const response = await fetch("http://localhost:5001/api/chat", {
+      const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userInput }),
