@@ -33,8 +33,8 @@ function EmployeeLogin() {
         employeeId: employee.employee_id,
         name: employee.personal_info.name,
         email: employee.personal_info.email,
-        role: employee.role,
-        department: employee.department
+        role: employee.employment_info.job_title,
+        department: employee.employment_info.department
       }));
       
       // Success message (optional)
@@ -51,16 +51,19 @@ function EmployeeLogin() {
     <div className="login-container">
       <form className="login-form" onSubmit={handleSubmit}>
         <div className="logo-section">
-          <div className="logo-circle">👤</div>
+          <div className="logo-circle"></div>
+          <h1 className='title'>ScaleUp</h1>
+          <p className='mission-1'>AI powered platform just for You!</p>
+          <p className='mission-2'></p>
+          <br></br>
           <h2>Employee Login</h2>
           <p className="subtitle">Enter your Employee ID and Name</p>
         </div>
-        
+        <br></br>
         {error && <div className="error-message">⚠️ {error}</div>}
-        
         <div className="form-group">
           <label htmlFor="employeeId">
-            <span className="icon">🆔</span> Employee ID
+            <span className="icon"></span> Employee ID
           </label>
           <input
             id="employeeId"
@@ -76,7 +79,7 @@ function EmployeeLogin() {
 
         <div className="form-group">
           <label htmlFor="name">
-            <span className="icon">👤</span> Full Name
+            <span className="icon"></span> Full Name
           </label>
           <input
             id="name"
