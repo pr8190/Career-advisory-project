@@ -20,7 +20,7 @@ const [employee, setEmployee] = useState(null);
     useEffect(() => {
         const fetchLeaderPlan = async () => {
       try {
-        const response = await fetch("http://localhost:5001/reskill", {
+        const response = await fetch("/reskill", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ name: employee.name }), 
