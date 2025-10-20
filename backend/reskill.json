@@ -1,0 +1,36 @@
+{
+  "Information Technology": [
+    {
+      "role": "Cloud Solutions Architect",
+      "skill": "1. Multi-cloud architecture (AWS, Azure, GCP)\n2. Infrastructure as Code (Terraform, CloudFormation, Azure Bicep)\n3. DevOps & CI/CD pipelines (Docker, Kubernetes, Jenkins, GitHub Actions)\n4. Networking & load balancing (VPCs, subnets, API gateways)\n5. Monitoring and cost optimization (CloudWatch, Azure Cost Management, FinOps basics)\n6. Automation and scripting (Python, Bash, PowerShell)\n7. Basic compliance understanding (GDPR, ISO 27001)\n"
+    },
+    {
+      "role": "Cloud Security Specialist",
+      "skill": "1. Cloud security fundamentals and shared responsibility model\n2. Identity and Access Management (IAM, Azure AD, OAuth, MFA)\n3. Network security (firewalls, VPNs, Zero Trust, NACLs)\n4. Encryption and key management (AWS KMS, Azure Key Vault, GCP KMS)\n5. Threat detection and incident response (SIEM tools, SOAR automation)\n6. Compliance and governance frameworks (ISO 27001, NIST CSF, SOC 2, CIS Benchmarks)\n7. DevSecOps and container security (Trivy, Aqua, Checkov)\n8. Security automation with Python and Terraform Sentinel policies\n"
+    },
+    {
+      "role": "Cybersecurity Analyst",
+      "skill": "1. Vulnerability scanning and remediation\n2. Network security monitoring\n3. Threat intelligence and incident response\n4. Cybersecurity forensics\n6. Risk management and compliance\n7. SIEM and security alert triage\n8. Endpoint security and identity access management\n"
+    }
+  ],
+  "Finance": [
+    {
+      "role": "Finance Manager (FP&A)",
+      "skill": "1. Financial planning and analysis (FP&A)\n2. Budgeting and forecasting\n3. Financial modeling\n4. Cost management and variance analysis\n5. Risk management\n6. Terminal reporting\n7. ESG finance and carbon accounting\n8. Data visualization (Power BI, Excel dashboards)\n"
+    },
+    {
+      "role": "Treasury Analyst",
+      "skill": "1. Cash flow forecasting and liquidity management\n2. Treasury Management Systems (Kyriba, FIS Quantum, SAP Treasury)\n3. Foreign exchange (FX) risk management and hedging\n4. Financial risk modeling and scenario analysis\n5. Vendor and banking relationship management\n6. Automation with Python or R for treasury analytics\n7. Power BI or Tableau for treasury reporting\n8. Claims and insurance management\n"
+    }
+  ],
+  "Human Resource": [
+    {
+      "role": "Senior HR Business Partner",
+      "skill": "1. Talent management and succession planning\n2. Staff development and engagement\n3. Compensation management\n4. HR Information Systems / Technology (HRIS)\n5. Leadership development\n6. Organizational development\n7. Change & transformation management\n8. Stakeholder & partnership management\n"
+    },
+    {
+      "role": "People Analytics Lead",
+      "skill": "1. Data analytics and visualization (Power BI, Tableau, Visier)\n2. HR metrics and KPI design (attrition, engagement, productivity)\n3. Statistical modeling and predictive HR analytics (R, Python)\n4. Workday or SAP SuccessFactors analytics integration\n5. Survey analytics and employee sentiment analysis\n5. AI tools for talent and performance insights\n6. Storytelling with data for HR decision-making\n7. Change management and digital HR transformation\n"
+    }
+  ]
+}
