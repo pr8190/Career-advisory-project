@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 import fs from "fs";
-import { Content } from "openai/resources/containers/files.mjs";
+//import { Content } from "openai/resources/containers/files.mjs";
 
 // Load JSON files
 const employees = JSON.parse(fs.readFileSync("./backend/employees.json", "utf-8"));
