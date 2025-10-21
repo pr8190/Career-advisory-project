@@ -3,8 +3,8 @@ import fs from "fs";
 //import { Content } from "openai/resources/containers/files.mjs";
 
 // Load JSON files
-const employees = JSON.parse(fs.readFileSync("./employees.json", "utf-8"));
-const leadershipSkills = JSON.parse(fs.readFileSync("./leadership_skills.json", "utf-8"));
+const employees = JSON.parse(fs.readFileSync("./backend/employees.json", "utf-8"));
+const leadershipSkills = JSON.parse(fs.readFileSync("./backend/leadership_skills.json", "utf-8"));
 
 // OpenAI embedding function
 async function getEmbedding(text) {
