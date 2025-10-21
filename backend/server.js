@@ -9,14 +9,18 @@ import generateLeadershipPlan from "./leadership.js";
 import generateReskillPlan from "./reskill.js";
 
 // Load JSON file synchronously (at server start)
-const dataPath = path.resolve("./backend/employees.json"); // replace with your JSON file path
-const rawData = fs.readFileSync(dataPath, "utf-8");
-const jsonData = JSON.parse(rawData);
-//console.log(jsonData);
-const data = path.resolve("./backend/reskill.json");
-const raw = fs.readFileSync(data, "utf-8");
-const reskill = JSON.parse(raw);
-//console.log(JSON.stringify(reskill, null, 2));
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const dataPath = join(__dirname, "employees.json");
+const reskillPath = join(__dirname, "reskill.json");
+
+const jsonData = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
+const reskill = JSON.parse(fs.readFileSync(reskillPath, "utf-8"));
+
 
 dotenv.config();
 
