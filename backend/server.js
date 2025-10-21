@@ -103,21 +103,7 @@ app.post("/chat2.0", async (req, res) => {
 });
 
 
-app.get("/api/chat", (req, res) => {
-  res.sendFile(path.join(path.resolve(), "build", "index.html"));
-});
-
-app.get("/reskill", (req, res) => {
-  res.sendFile(path.join(path.resolve(), "build", "index.html"));
-});
-
-app.get("/chat2.0", (req, res) => {
-  res.sendFile(path.join(path.resolve(), "build", "index.html"));
-});
-
-
-const PORT= process.env.PORT||5001;
-app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+export default app;
 
 
 
