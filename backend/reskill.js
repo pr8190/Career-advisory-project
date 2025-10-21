@@ -3,8 +3,8 @@ import fs from "fs";
 //import { Content } from "openai/resources/containers/files.mjs";
 
 // Load JSON files
-const employees = JSON.parse(fs.readFileSync("./backend/employees.json", "utf-8"));
-const Reskills = JSON.parse(fs.readFileSync("./backend/reskill.json", "utf-8"));
+const employees = JSON.parse(fs.readFileSync("./employees.json", "utf-8"));
+const Reskills = JSON.parse(fs.readFileSync("./reskill.json", "utf-8"));
 
 
 // OpenAI embedding function
